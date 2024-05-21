@@ -58,3 +58,80 @@ img{
     mix-blend-mode: color ;
   } 
 
+#acercademi, #skills,#educacion, #portfolio,#contacto{
+    padding: 10%;
+}
+
+#acercademi{
+    z-index: 1;
+    
+    position: relative;
+    height: 100vh;
+    background-image: url('../assets/img2.jpg');
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: right;
+    
+}
+#acercademi::before,
+#acercademi::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+#acercademi::before{
+    z-index: -2;
+        background: linear-gradient(
+            90deg,
+            grey 50%,
+            transparent 50%
+        );
+        mix-blend-mode: hue;
+    }
+#acercademi::after{
+    z-index: -1;
+    background: linear-gradient(
+        90deg,
+        white 50%,
+        #ffd800 50%          
+    );
+    mix-blend-mode: multiply;
+}
+
+.datospersonales{
+    list-style: none;
+    z-index: 3;
+    padding:0 ;
+}
+.datospersonales li{    
+    margin-top: 1em;
+   
+}
+.datospersonales li::after{
+content: '';
+display: block;
+height: 1px;
+width: 100%;
+background: black;
+}
+
+.datospersonales .texto{    
+    display: inline-block;
+    min-width: 110px;           
+}
+
+#acercademi h3,#skills h3,#educacion h3, #portfolio h3, #contacto h3{
+    position: relative;
+}
+
+#acercademi h3::before, #skills h3::before,#educacion h3::before,#portfolio h3::before, #contacto h3::before{
+    content: '';
+    position: absolute;
+    display: inline-block;    
+    width: 12px;
+    height: 4px;
+    top: 50%;
+    left: -25px;
+    background: #f0116e;
+}
+

@@ -1,0 +1,31 @@
+.contenedor-relativo{
+position: relative;
+}
+
+.nombre{
+position: absolute;
+z-index: 1;
+font-weight: 700;
+color: white;
+left: 15%;
+top: 45%;
+font-size: 3em;
+}
+.nombre::before{
+    content: 'HOLA SOY';
+    display: block;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.nombre::after{
+    content: 'FRONTEND DEVELOPER';
+    display: block;
+    text-align: center;
+    background: hsl(0, 0%, 0%);
+    color: #f0116e;
+    width: 12em;
+    font-size: .4em;
+    padding: 5px;
+    margin-top: 15px;
+}
