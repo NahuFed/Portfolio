@@ -1,0 +1,85 @@
+.Sidebar {
+  background: white;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;  
+}
+
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.SidebarList .fila {
+  width: 100%;
+  height: 3em;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  text-decoration: none;
+  position: relative;
+}
+
+.SidebarList .fila:hover,
+.fila:active {
+  cursor: pointer;
+  background-color: #f5efec;
+}
+
+.fila .icono {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.fila .titulos-sidebar {
+  flex: 70%;  
+}
+
+.SidebarList .active {
+  background-color: #e5ba73;
+  border-left: solid 0.5em #faeab1;
+}
+
+.SidebarList .fila::before {
+ content: '';
+ display: block;
+ height: 2px;
+ width: 10px;
+ background-color: red;
+ position: absolute;
+ left: 20%;
+ transition:  ease-out 250ms;
+}
+.SidebarList .fila:hover::before{
+  height: 1px;
+  width: 9em;
+ }
+
+ .SidebarList .fila::after {
+content: '';
+display: block;
+height: 1px;
+width: 8em;
+background-color: hsl(0, 1%, 60%,50%);
+position: absolute;
+bottom: 0;
+ }
+
+
+@media screen and (max-width: 768px) {
+  .fila .titulos-sidebar {
+    display: none;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .SidebarList .fila {
+    flex-direction: column;
+    padding: 2em 0em;    
+  }
+}

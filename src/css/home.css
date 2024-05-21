@@ -1,0 +1,19 @@
+.layout {
+    box-sizing: border-box;
+    border-top: 2px solid #c68940;
+     min-height: 100vh;
+     
+  }
+  
+  
+  .sidebar-wrapper {
+   background-color: white;
+    min-height: 100%;  
+    width: 20%;
+    padding: 0;
+  }
+
+  .body-portfolio{
+    padding: 0;
+    width: 80%;
+  }
