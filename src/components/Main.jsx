@@ -122,20 +122,57 @@ const Main = () => {
       </div>
       <div id="educacion">
         <h3>EDUCACION</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-          expedita eius, aspernatur vitae quo commodi alias id atque,
-          necessitatibus ea praesentium reiciendis culpa vero voluptatem eos
-          ducimus quia asperiores ipsam eligendi blanditiis! Cum dicta officiis
-          nemo animi assumenda! Provident molestiae reiciendis quasi ut velit
-          fugit, aspernatur dignissimos vero laborum debitis suscipit sapiente
-          optio totam, quibusdam pariatur eum necessitatibus ipsam voluptatibus
-          similique? Explicabo quos dolore minus vitae temporibus earum,
-          voluptas iusto in quas quod suscipit aut, repellendus culpa dolores!
-          Dolor, aut. Ad aliquam quaerat nam aliquid, alias odit incidunt quidem
-          numquam reprehenderit facere obcaecati ipsam, eos ab sequi inventore.
-          Ex, quibusdam!
-        </p>
+        <div className="row p-5 g-5 w-75">
+        <hr />
+          <div className="col-6 d-flex">
+            <div>
+              <span>01</span>
+            </div>
+            <div>
+              <h5>Universidad Tecnologica Nacional</h5>
+              <p>
+              Tecnicatura Universitaria en programación<br/>2023 - actualidad
+              </p>
+            </div>
+          </div>
+          <div className="col-6 d-flex">
+            <div>
+            <span>02</span>
+            </div>
+            <div>
+              <h5>MindHub</h5>
+              <p>
+                Front End Web Developer Bootcamp<br/>2022 - 2023
+              </p>
+            </div>
+          </div>
+       
+          <div className="col-6 d-flex">
+            
+            <div>
+            <span>03</span>
+            </div>
+            <div>
+              <h5>RollingCode School</h5>
+              <p>
+              Fullstack Mern Web Developer<br/>2022 - 2023
+              </p>
+            </div>
+          </div>
+          <div className="col-6 d-flex">
+            <div>
+            <span>04</span>
+            </div>
+            <div>
+              <h5>Centro Universitario de idiomas</h5>
+              <p>
+               Intermediate English Language B1.2<br/>2023
+              </p>
+            </div>
+          </div>
+          <hr />
+          <p className="frase-motivadora">LA EDUCACIÓN NO ES PREPARACIÓN<br/>PARA LA VIDA, ES LA VIDA MISMA.</p>
+        </div>
       </div>
       <div id="portfolio">
         <h3>PORTFOLIO</h3>

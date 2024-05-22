@@ -17,3 +17,15 @@
     padding: 0;
     width: 80%;
   }
+
+
+
+#educacion span{
+  color: rgba(128, 128, 128, 0.548);
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+#educacion p{
+  color: rgb(95, 94, 94);
+  
+}

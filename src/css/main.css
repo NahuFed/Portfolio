@@ -135,3 +135,18 @@ background: black;
     background: #f0116e;
 }
 
+.frase-motivadora {
+    color: rgb(70, 68, 68);
+    font-size: larger;
+    position: relative;
+  }
+
+  .frase-motivadora::before{
+    content: open-quote;
+    color:#f0116e ;
+    font-size: 10rem;
+    position: absolute;
+    top: -4rem;
+    left: -5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
