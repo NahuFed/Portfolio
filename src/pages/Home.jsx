@@ -4,17 +4,15 @@ import Main from "../components/Main";
 import Header from "../components/Header";
 import '../css/home.css'
 import { Col, Row } from "react-bootstrap";
-import Sidebar from "../components/Sidebar";
 const Home = () => {
   return (
     <>
       <div className="d-flex">
         <div xs={2} className="sidebar-wrapper">
-          <Sidebar />
+          <Header />
         </div>
 
-        <div className="body-portfolio">
-          <Header />
+        <div className="body-portfolio">          
           <Main />
           <Footer />
         </div>

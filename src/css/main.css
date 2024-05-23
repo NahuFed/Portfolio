@@ -207,3 +207,31 @@ background: black;
     transition: ease-out 250ms;
   }
 
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formulario-contacto input, .formulario-contacto select, .formulario-contacto textarea{
+    padding: 8px;
+    border: 2px solid rgba(207, 207, 207, 0.473);
+    border-radius: 0;
+    margin-bottom: 1em;  
+    resize:none;
+}
+
+.formulario-contacto select {
+    color: gray;
+}
+
+.formulario-contacto input:focus, .formulario-contacto select:focus, .formulario-contacto textarea:focus {
+    outline: none;
+    border: 2px solid rgba(61, 61, 61, 0.719);
+    transition: ease-out 200ms;
+}
+
+.info-contacto{
+    color: rgb(85, 84, 84);
+    margin-bottom: 2em;
+}

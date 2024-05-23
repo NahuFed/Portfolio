@@ -15,6 +15,7 @@ import peliculas from "../assets/peliculas.png";
 import noticias from "../assets/noticias.png";
 import clima from "../assets/clima.png";
 import goldenvet from "../assets/goldenvet.png";
+import { faLocationDot, faClipboard } from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
   return (
@@ -285,22 +286,34 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div id="contacto">
+      <div id="contacto" >
         <h3>CONTACTO</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-          expedita eius, aspernatur vitae quo commodi alias id atque,
-          necessitatibus ea praesentium reiciendis culpa vero voluptatem eos
-          ducimus quia asperiores ipsam eligendi blanditiis! Cum dicta officiis
-          nemo animi assumenda! Provident molestiae reiciendis quasi ut velit
-          fugit, aspernatur dignissimos vero laborum debitis suscipit sapiente
-          optio totam, quibusdam pariatur eum necessitatibus ipsam voluptatibus
-          similique? Explicabo quos dolore minus vitae temporibus earum,
-          voluptas iusto in quas quod suscipit aut, repellendus culpa dolores!
-          Dolor, aut. Ad aliquam quaerat nam aliquid, alias odit incidunt quidem
-          numquam reprehenderit facere obcaecati ipsam, eos ab sequi inventore.
-          Ex, quibusdam!
-        </p>
+
+          <div className="p-5">
+          <div className="info-contacto row w-50">
+            <div className="col-6 d-flex">
+            <FontAwesomeIcon icon={faLocationDot} className="fs-1 me-3"/>
+            <p>AV CONSTITUCIÓN 2800,<br/> TAFI VIEJO, TUCUMÁN.</p>
+            </div>
+            <div className="col-6 d-flex">
+            <FontAwesomeIcon icon={faClipboard} className="fs-1 me-3"/>
+            <p>CONSULTAS GENERALES<br/>nahufed@gmail.com</p>
+            </div>
+          </div>
+          <form action="" className="formulario-contacto">
+              <input type="text" placeholder="*TU NOMBRE"/>
+              <input type="text" placeholder="*TU EMAIL"/>
+              <select name="interes" placeholder="*">
+                <option value = ''>EN QUE ESTAS INTERESADO</option>
+                <option value = 'Desarrollo'>Desarrollo Web Personalizado</option>
+                <option value = 'Colaboracion'>Colaboración en Proyectos</option>
+                <option value = 'Reclutamiento'>Reclutamiento o Contratación</option>
+                <option value = 'Consultoria'>Consultoría o Asesoramiento Técnico</option>                
+                </select>
+                <textarea name="mensaje" placeholder="*TU MENSAJE" rows='5' cols = '40'/>
+                <button type="submit" className="btn btn-dark w-25 rounded-0 p-3">ENVIAR</button>
+          </form>
+      </div>
       </div>
     </main>
   );

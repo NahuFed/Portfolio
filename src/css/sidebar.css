@@ -1,7 +1,7 @@
 .Sidebar {
   background: white;
   position: sticky;
-  top: 0;
+  top: 5%;
   overflow-y: auto;  
 }
 
@@ -9,6 +9,17 @@
   height: auto;
   padding: 0;
   width: 100%;
+}
+
+.SidebarList .imagen{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.SidebarList .imagen img{
+  width: 50%;
 }
 
 .SidebarList .fila {
