@@ -1,0 +1,11 @@
+.logo-footer, .redes-footer{
+    width: 3rem;
+    position: relative;
+    filter: grayscale(1) opacity(0.5) brightness(0.4);
+    transition: color .4s ease-in-out;
+}
+
+.redes-footer:hover{
+    color: rgb(211, 211, 211);
+    
+}
