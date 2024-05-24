@@ -1,250 +1,195 @@
-
-
-img{
-    width: 100%;
-}
-.carousel-funky-img {    
-    overflow: hidden;
-    position: relative;    
-    height: 100vh;       
-    
+#acercademi,
+#skills,
+#educacion,
+#portfolio,
+#contacto {
+  padding: 10%;
 }
 
- .carousel-funky-img img {
-    position: absolute; 
-    z-index: -3;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    
-}
-
-.carousel-funky-img::before,
-.carousel-funky-img::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-}
-
-.carousel-funky-img::before {
-    z-index: -1;
-    background:
-    repeating-linear-gradient(
-        90deg,
-        #f0116e,
-        #f0116e 60%,
-        #ffd800 60%,
-        #ffd800 80%,
-        #f0116e 80%,
-        #f0116e 100%        
-    )
-    
-    ;
-    mix-blend-mode: multiply;
-  }
-
-  .carousel-funky-img:first-of-type::before {
-      
-    background: linear-gradient(
-        90deg,
-        #f0116e 80%,
-        #ffd800 20%          
-    );
-    mix-blend-mode: multiply;
-}
-.carousel-funky-img::after {
-    z-index: -2;
-    background: white;
-    mix-blend-mode: color ;
-  } 
-
-#acercademi, #skills,#educacion, #portfolio,#contacto{
-    padding: 10%;
-}
-
-#acercademi{
-    z-index: 1;
-    
-    position: relative;
-    height: 100vh;
-    background-image: url('../assets/img2.jpg');
-    background-repeat: no-repeat;    
-    background-size: cover;
-    background-position: right;
-    
+#acercademi {
+  z-index: 1;
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
 }
 #acercademi::before,
 #acercademi::after {
-    content: '';
-    position: absolute;
-    inset: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
 }
-#acercademi::before{
-    z-index: -2;
-        background: linear-gradient(
-            90deg,
-            grey 50%,
-            transparent 50%
-        );
-        mix-blend-mode: hue;
-    }
-#acercademi::after{
-    z-index: -1;
-    background: linear-gradient(
-        90deg,
-        white 50%,
-        #ffd800 50%          
-    );
-    mix-blend-mode: multiply;
+#acercademi::before {
+  z-index: -2;
+  background: linear-gradient(90deg, grey 50%, transparent 50%);
+  mix-blend-mode: hue;
+}
+#acercademi::after {
+  z-index: -1;
+  background: linear-gradient(90deg, white 50%, #ffd800 50%);
+  mix-blend-mode: multiply;
 }
 
-.datospersonales{
-    list-style: none;
-    z-index: 3;
-    padding:0 ;
+.datospersonales {
+  list-style: none;
+  z-index: 3;
+  padding: 0;
 }
-.datospersonales li{    
-    margin-top: 1em;
-   
+.datospersonales li {
+  margin-top: 1em;
 }
-.datospersonales li::after{
-content: '';
-display: block;
-height: 1px;
-width: 100%;
-background: black;
-}
-
-.datospersonales .texto{    
-    display: inline-block;
-    min-width: 110px;           
+.datospersonales li::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: black;
 }
 
-#acercademi h3,#skills h3,#educacion h3, #portfolio h3, #contacto h3{
-    position: relative;
+.datospersonales .texto {
+  display: inline-block;
+  min-width: 110px;
 }
 
-#acercademi h3::before, #skills h3::before,#educacion h3::before,#portfolio h3::before, #contacto h3::before{
-    content: '';
-    position: absolute;
-    display: inline-block;    
-    width: 12px;
-    height: 4px;
-    top: 50%;
-    left: -25px;
-    background: #f0116e;
+#acercademi h3,
+#skills h3,
+#educacion h3,
+#portfolio h3,
+#contacto h3 {
+  position: relative;
+}
+
+#acercademi h3::before,
+#skills h3::before,
+#educacion h3::before,
+#portfolio h3::before,
+#contacto h3::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 12px;
+  height: 4px;
+  top: 50%;
+  left: -25px;
+  background: #f0116e;
 }
 
 .frase-motivadora {
-    color: rgb(70, 68, 68);
-    font-size: larger;
-    position: relative;
-  }
-
-  .frase-motivadora::before{
-    content: open-quote;
-    color:#f0116e ;
-    font-size: 10rem;
-    position: absolute;
-    top: -4rem;
-    left: -5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-
-  .tarjeta{
-    position: relative;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.1);
-    transition:  ease-out 150ms;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-    border-radius: 3px;
-    text-decoration: none;
-    color: black;
-    width: 85%;
-    height: 100%;
-    
-  }
-
-  .tarjeta-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: absolute;
-    display: none;    
-  }
-
-  .tarjeta-titulo h5{
-    font-weight: 600;
-    font-size: 1.4em;
-  }
-
-  .tarjeta-texto {
-    text-align: center;
-    color: rgba(100, 100, 100, 0.712);
-  }
-  .tarjeta:hover{
-        scale: 1.1;      
-        .tarjeta-body{
-            display: block;           
-        }
-        .tarjeta::before{
-            display: block;
-        }
-
-        cursor:pointer;
-  }
-
-  .tarjeta::before,
-  .tarjeta::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-  }  
-
-  .tarjeta:hover::before{ 
-    background: rgba(255, 255, 255, 0.9);
-    mix-blend-mode: luminosity;    
-    transition: ease-out 250ms;
-  }
-
-.formulario-contacto{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  color: rgb(70, 68, 68);
+  font-size: larger;
+  position: relative;
 }
 
-.formulario-contacto input, .formulario-contacto select, .formulario-contacto textarea{
-    padding: 8px;
-    border: 2px solid rgba(207, 207, 207, 0.473);
-    border-radius: 0;
-    margin-bottom: 1em;  
-    resize:none;
+.frase-motivadora::before {
+  content: open-quote;
+  color: #f0116e;
+  font-size: 10rem;
+  position: absolute;
+  top: -4rem;
+  left: -5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.tarjeta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.1);
+  transition: ease-out 150ms;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  width: 85%;
+  height: 100%;
+}
+
+.tarjeta-body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  display: none;
+}
+
+.tarjeta-titulo h5 {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.tarjeta-texto {
+  text-align: center;
+  color: rgba(100, 100, 100, 0.712);
+}
+.tarjeta:hover {
+  scale: 1.1;
+  .tarjeta-body {
+    display: block;
+  }
+  .tarjeta::before {
+    display: block;
+  }
+
+  cursor: pointer;
+}
+
+.tarjeta::before,
+.tarjeta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.tarjeta:hover::before {
+  background: rgba(255, 255, 255, 0.9);
+  mix-blend-mode: luminosity;
+  transition: ease-out 250ms;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+  padding: 8px;
+  border: 2px solid rgba(207, 207, 207, 0.473);
+  border-radius: 0;
+  margin-bottom: 1em;
+  resize: none;
 }
 
 .formulario-contacto select {
-    color: gray;
+  color: gray;
 }
 
-.formulario-contacto input:focus, .formulario-contacto select:focus, .formulario-contacto textarea:focus {
-    outline: none;
-    border: 2px solid rgba(61, 61, 61, 0.719);
-    transition: ease-out 200ms;
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border: 2px solid rgba(61, 61, 61, 0.719);
+  transition: ease-out 200ms;
 }
 
-.info-contacto{
-    color: rgb(85, 84, 84);
-    margin-bottom: 2em;
-    width: 50%;
+.info-contacto {
+  color: rgb(85, 84, 84);
+  margin-bottom: 2em;
+  width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-    .info-contacto{
-      width: 100%;
-      flex-direction: column;
-    }
+  .info-contacto {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .formulario-contacto {
-        width: 100%;
-    }
-
+  .formulario-contacto {
+    width: 100%;
+  }
 }

@@ -62,9 +62,7 @@ const Main = () => {
             <div>
               <h5>HTML 5</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Lenguaje de marcado para estructurar y presentar contenido web.
               </p>
             </div>
           </div>
@@ -78,9 +76,7 @@ const Main = () => {
             <div>
               <h5>CSS 3</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Hojas de estilo para el diseño visual y la adaptabilidad de sitios web.
               </p>
             </div>
           </div>
@@ -91,9 +87,7 @@ const Main = () => {
             <div>
               <h5>JAVASCRIPT</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Lenguaje de programación para interactividad y dinamismo en páginas web.
               </p>
             </div>
           </div>
@@ -104,9 +98,7 @@ const Main = () => {
             <div>
               <h5>REACT</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Biblioteca de JavaScript para construir interfaces de usuario interactivas.
               </p>
             </div>
           </div>
@@ -117,9 +109,7 @@ const Main = () => {
             <div>
               <h5>SQL</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Lenguaje de consulta para gestionar y manipular bases de datos relacionales.
               </p>
             </div>
           </div>
@@ -130,9 +120,7 @@ const Main = () => {
             <div>
               <h5>SCRUM</h5>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-                deleniti magni, quos laborum iure quod quia architecto fugit
-                commodi doloribus.
+              Marco de trabajo ágil para proyectos que evolucionan rápidamente.
               </p>
             </div>
           </div>

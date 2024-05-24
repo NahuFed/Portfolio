@@ -1,5 +1,9 @@
 import "../css/header.css";
 import logo from "../assets/logo.png"
+
+import { faGithub,faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Header = () => {
   return (
     <>
@@ -44,6 +48,14 @@ const Header = () => {
             <div className="titulos-sidebar fs-5">CONTACTO</div>
           </a>
         </li>
+        <div className="redes d-flex justify-content-center gap-4 mt-5">
+          <a href="https://www.linkedin.com/in/rodrigueznahuelfederico/" className="text-decoration-none text-black">
+          <FontAwesomeIcon  icon={faLinkedin} className="fs-2" />
+          </a>
+          <a href="https://github.com/NahuFed"  className="text-decoration-none text-black">
+          <FontAwesomeIcon  icon={faGithub} className="fs-2" />
+          </a>
+        </div>
         
       </ul>
     </nav>
