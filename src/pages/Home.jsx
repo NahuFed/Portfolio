@@ -7,7 +7,7 @@ import { Col, Row } from "react-bootstrap";
 const Home = () => {
   return (
     <>
-      <div className="d-flex">
+      <div className="contenedor-principal">
         <div xs={2} className="sidebar-wrapper">
           <Header />
         </div>

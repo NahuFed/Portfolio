@@ -1,11 +1,7 @@
-.layout {
-    box-sizing: border-box;
-    border-top: 2px solid #c68940;
-     min-height: 100vh;
-     
-  }
-  
-  
+.contenedor-principal{
+  display: flex;
+}
+
   .sidebar-wrapper {
    background-color: white;
     min-height: 100%;  
@@ -28,4 +24,54 @@
 #educacion p{
   color: rgb(95, 94, 94);
   
+}
+
+#skills .skill{
+  display: flex;
+}
+.skill-icon{
+  font-size: 4em;
+  margin-right: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .contenedor-principal{
+    flex-direction: column;
+  }
+  .body-portfolio{
+    width: 100%;
+  }
+  .sidebar-wrapper{
+    width: 100%;
+  }
+  #acercademi{
+    background-image: none;
+    background-color: white;
+  }
+  #acercademi::after{
+    background: none;
+  }
+  #skills p{
+    display: none;
+  }
+  #skills .skill{
+    flex-direction: column;    
+    align-items: center;    
+  }
+  .skill-icon{
+    display: flex;
+    justify-content: center;   
+  }
+
+  .skill-icon{
+    margin-right: 0;
+  }
+}
+
+@media all and (min-width: 769px){
+.informacion{
+  width: 25%;
+}
+
 }

@@ -23,7 +23,7 @@ const Main = () => {
       <Carrousel />
 
       <div id="acercademi">
-        <div className="w-25 informacion">
+        <div className="informacion">
           <h3>ACERCA DE MI</h3>
           <p>
             Hola, soy un desarollador Frontend de Tucumán, Argentina. Estoy
@@ -52,11 +52,11 @@ const Main = () => {
       <div id="skills">
         <h3>SKILLS</h3>
         <div className="row p-5 g-5">
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon 
                 icon={faHtml5}
-                className="fs-1 me-4 text-danger"
+                className="skill-icon text-danger"
               />
             </div>
             <div>
@@ -68,11 +68,11 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon 
                 icon={faCss3}
-                className="fs-1 me-4 text-primary"
+                className="skill-icon text-primary"
               />
             </div>
             <div>
@@ -84,9 +84,9 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon icon={faJs} className="fs-1 me-4 text-warning" />
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon  icon={faJs} className="skill-icon text-warning" />
             </div>
             <div>
               <h5>JAVASCRIPT</h5>
@@ -97,9 +97,9 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon icon={faReact} className="fs-1 me-4 text-info" />
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon  icon={faReact} className="skill-icon text-info" />
             </div>
             <div>
               <h5>REACT</h5>
@@ -110,9 +110,9 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon icon={faDatabase} className="fs-1 me-4" />
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon  icon={faDatabase} className="skill-icon" />
             </div>
             <div>
               <h5>SQL</h5>
@@ -123,9 +123,9 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-4 d-flex">
-            <div>
-              <FontAwesomeIcon icon={faPeopleGroup} className="fs-1 me-4" />
+          <div className="col-6 col-md-4 skill">
+            <div >
+              <FontAwesomeIcon  icon={faPeopleGroup} className="skill-icon" />
             </div>
             <div>
               <h5>SCRUM</h5>
@@ -142,7 +142,7 @@ const Main = () => {
         <h3>EDUCACION</h3>
         <div className="row p-5 g-5 w-75">
           <hr />
-          <div className="col-6 d-flex">
+          <div className="col-md-6 d-flex">
             <div>
               <span>01</span>
             </div>
@@ -155,7 +155,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-6 d-flex">
+          <div className="col-md-6 d-flex">
             <div>
               <span>02</span>
             </div>
@@ -169,7 +169,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="col-6 d-flex">
+          <div className="col-md-6 d-flex">
             <div>
               <span>03</span>
             </div>
@@ -182,7 +182,7 @@ const Main = () => {
               </p>
             </div>
           </div>
-          <div className="col-6 d-flex">
+          <div className="col-md-6 d-flex">
             <div>
               <span>04</span>
             </div>
@@ -205,8 +205,8 @@ const Main = () => {
       </div>
       <div id="portfolio">
         <h3>PORTFOLIO</h3>
-        <div className="row p-5 gy-5">
-          <div className="col-6">
+        <div className="row px-md-5 py-5 gy-5">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://ejercicio6react-nahuel-rodriguez.netlify.app/" className="tarjeta">
               <img src={colores}></img>
               <div className="tarjeta-body">
@@ -219,7 +219,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://ejercicio8react-nahuel-rodriguez.netlify.app/" className="tarjeta">
               <img src={formulario}></img>
               <div className="tarjeta-body">
@@ -232,7 +232,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://ejercicio10react-nahuel-rodriguez.netlify.app/" className="tarjeta">
               <img src={peliculas}></img>
               <div className="tarjeta-body">
@@ -245,7 +245,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://ejercicio12react-nahuel-rodriguez.netlify.app/" className="tarjeta">
               <img src={noticias}></img>
               <div className="tarjeta-body">
@@ -258,7 +258,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://goldenvet.netlify.app/" className="tarjeta">
               <img src={goldenvet}></img>
               <div className="tarjeta-body">
@@ -271,7 +271,7 @@ const Main = () => {
               </div>
             </a>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 d-flex justify-content-center">
             <a  href="https://ejercicio13react-nahuel-rodriguez.netlify.app/" className="tarjeta">
               <img src={clima}></img>
               <div className="tarjeta-body">
@@ -289,8 +289,8 @@ const Main = () => {
       <div id="contacto" >
         <h3>CONTACTO</h3>
 
-          <div className="p-5">
-          <div className="info-contacto row w-50">
+          <div className="px-md-5 py-5">
+          <div className="info-contacto row">
             <div className="col-6 d-flex">
             <FontAwesomeIcon icon={faLocationDot} className="fs-1 me-3"/>
             <p>AV CONSTITUCIÓN 2800,<br/> TAFI VIEJO, TUCUMÁN.</p>
