@@ -1,9 +1,16 @@
+header{
+  min-height: 100%;
+  position: relative;
+}
+
+
 :root{
   --bar-width: 40px;
   --bar-height: 4px;
   --hamburger-gap:6px;
   --hamburger-margin:2em;
 }
+
 
 .hamburger-menu{
   position: absolute;
