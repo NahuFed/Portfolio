@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
-    <>
+    <header>
     <label className="hamburger-menu">
       <input type="checkbox" />
     </label>
@@ -59,7 +59,7 @@ const Header = () => {
         
       </ul>
     </nav>
-    </>
+    </header>
   );
 };
 
