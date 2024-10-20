@@ -44,7 +44,7 @@ const Main = () => {
               <span className="texto">Nacionalidad:</span>Argentina
             </li>
           </ul>
-          <a className="btn btn-dark rounded-0 p-3 mt-5" href="#">
+          <a className="btn btn-dark rounded-0 p-3 mt-5" href="src\assets\documents\cv.pdf" download="CV_Nahuel_Rodriguez.pdf">
             DESCARGAR CURRICULUM
           </a>
         </div>
