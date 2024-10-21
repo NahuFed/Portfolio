@@ -17,7 +17,7 @@ import clima from "../assets/clima.png";
 import goldenvet from "../assets/goldenvet.png";
 import { faLocationDot, faClipboard } from "@fortawesome/free-solid-svg-icons";
 import emailjs from '@emailjs/browser';
-
+import Swal from 'sweetalert2';
 
 const Main = () => {
   
@@ -31,11 +31,19 @@ const Main = () => {
         publicKey: '8MFuA2yvD8LE-YB8L',
       })
       .then(
-        () => {
-          console.log('SUCCESS!');
+        () => {          
+          Swal.fire({
+            title: "Mensaje enviado!",
+            text: "Me contactaré contigo pronto!",
+            icon: "success"
+          });
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Problemas con el envio!",
+            text: "Estamos trabajando para solucionarlo!"            
+          });
         },
       );
   };
