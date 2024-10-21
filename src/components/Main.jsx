@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from 'react';
 import "../css/main.css";
 import Carrousel from "./Carrousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,8 +16,30 @@ import noticias from "../assets/noticias.png";
 import clima from "../assets/clima.png";
 import goldenvet from "../assets/goldenvet.png";
 import { faLocationDot, faClipboard } from "@fortawesome/free-solid-svg-icons";
+import emailjs from '@emailjs/browser';
+
 
 const Main = () => {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_nahufed', 'template_p8h2vl5', form.current, {
+        publicKey: '8MFuA2yvD8LE-YB8L',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <main>
       <Carrousel />
@@ -44,7 +66,11 @@ const Main = () => {
               <span className="texto">Nacionalidad:</span>Argentina
             </li>
           </ul>
-          <a className="btn btn-dark rounded-0 p-3 mt-5" href="src\assets\documents\cv.pdf" download="CV_Nahuel_Rodriguez.pdf">
+          <a
+            className="btn btn-dark rounded-0 p-3 mt-5"
+            href="src\assets\documents\cv.pdf"
+            download="CV_Nahuel_Rodriguez.pdf"
+          >
             DESCARGAR CURRICULUM
           </a>
         </div>
@@ -53,8 +79,8 @@ const Main = () => {
         <h3>SKILLS</h3>
         <div className="row p-5 g-5">
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon 
+            <div>
+              <FontAwesomeIcon
                 icon={faHtml5}
                 className="skill-icon text-danger"
               />
@@ -62,13 +88,13 @@ const Main = () => {
             <div>
               <h5>HTML 5</h5>
               <p>
-              Lenguaje de marcado para estructurar y presentar contenido web.
+                Lenguaje de marcado para estructurar y presentar contenido web.
               </p>
             </div>
           </div>
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon 
+            <div>
+              <FontAwesomeIcon
                 icon={faCss3}
                 className="skill-icon text-primary"
               />
@@ -76,51 +102,62 @@ const Main = () => {
             <div>
               <h5>CSS 3</h5>
               <p>
-              Hojas de estilo para el diseño visual y la adaptabilidad de sitios web.
+                Hojas de estilo para el diseño visual y la adaptabilidad de
+                sitios web.
               </p>
             </div>
           </div>
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon  icon={faJs} className="skill-icon text-warning" />
+            <div>
+              <FontAwesomeIcon
+                icon={faJs}
+                className="skill-icon text-warning"
+              />
             </div>
             <div>
               <h5>JAVASCRIPT</h5>
               <p>
-              Lenguaje de programación para interactividad y dinamismo en páginas web.
+                Lenguaje de programación para interactividad y dinamismo en
+                páginas web.
               </p>
             </div>
           </div>
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon  icon={faReact} className="skill-icon text-info" />
+            <div>
+              <FontAwesomeIcon
+                icon={faReact}
+                className="skill-icon text-info"
+              />
             </div>
             <div>
               <h5>REACT</h5>
               <p>
-              Biblioteca de JavaScript para construir interfaces de usuario interactivas.
+                Biblioteca de JavaScript para construir interfaces de usuario
+                interactivas.
               </p>
             </div>
           </div>
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon  icon={faDatabase} className="skill-icon" />
+            <div>
+              <FontAwesomeIcon icon={faDatabase} className="skill-icon" />
             </div>
             <div>
               <h5>SQL</h5>
               <p>
-              Lenguaje de consulta para gestionar y manipular bases de datos relacionales.
+                Lenguaje de consulta para gestionar y manipular bases de datos
+                relacionales.
               </p>
             </div>
           </div>
           <div className="col-6 col-md-4 skill">
-            <div >
-              <FontAwesomeIcon  icon={faPeopleGroup} className="skill-icon" />
+            <div>
+              <FontAwesomeIcon icon={faPeopleGroup} className="skill-icon" />
             </div>
             <div>
               <h5>SCRUM</h5>
               <p>
-              Marco de trabajo ágil para proyectos que evolucionan rápidamente.
+                Marco de trabajo ágil para proyectos que evolucionan
+                rápidamente.
               </p>
             </div>
           </div>
@@ -195,7 +232,10 @@ const Main = () => {
         <h3>PORTFOLIO</h3>
         <div className="row px-md-5 py-5 gy-5">
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://ejercicio6react-nahuel-rodriguez.netlify.app/" className="tarjeta">
+            <a
+              href="https://ejercicio6react-nahuel-rodriguez.netlify.app/"
+              className="tarjeta"
+            >
               <img src={colores}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -208,7 +248,10 @@ const Main = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://ejercicio8react-nahuel-rodriguez.netlify.app/" className="tarjeta">
+            <a
+              href="https://ejercicio8react-nahuel-rodriguez.netlify.app/"
+              className="tarjeta"
+            >
               <img src={formulario}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -221,7 +264,10 @@ const Main = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://ejercicio10react-nahuel-rodriguez.netlify.app/" className="tarjeta">
+            <a
+              href="https://ejercicio10react-nahuel-rodriguez.netlify.app/"
+              className="tarjeta"
+            >
               <img src={peliculas}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -234,7 +280,10 @@ const Main = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://ejercicio12react-nahuel-rodriguez.netlify.app/" className="tarjeta">
+            <a
+              href="https://ejercicio12react-nahuel-rodriguez.netlify.app/"
+              className="tarjeta"
+            >
               <img src={noticias}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -247,7 +296,7 @@ const Main = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://goldenvet.netlify.app/" className="tarjeta">
+            <a href="https://goldenvet.netlify.app/" className="tarjeta">
               <img src={goldenvet}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -260,7 +309,10 @@ const Main = () => {
             </a>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <a  href="https://ejercicio13react-nahuel-rodriguez.netlify.app/" className="tarjeta">
+            <a
+              href="https://ejercicio13react-nahuel-rodriguez.netlify.app/"
+              className="tarjeta"
+            >
               <img src={clima}></img>
               <div className="tarjeta-body">
                 <div className="tarjeta-titulo">
@@ -274,34 +326,67 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div id="contacto" >
+      <div id="contacto">
         <h3>CONTACTO</h3>
 
-          <div className="px-md-5 py-5">
+        <div className="px-md-5 py-5">
           <div className="info-contacto row">
             <div className="col-6 d-flex">
-            <FontAwesomeIcon icon={faLocationDot} className="fs-1 me-3"/>
-            <p>AV CONSTITUCIÓN 2800,<br/> TAFI VIEJO, TUCUMÁN.</p>
+              <FontAwesomeIcon icon={faLocationDot} className="fs-1 me-3" />
+              <p>
+                AV CONSTITUCIÓN 2800,
+                <br /> TAFI VIEJO, TUCUMÁN.
+              </p>
             </div>
             <div className="col-6 d-flex">
-            <FontAwesomeIcon icon={faClipboard} className="fs-1 me-3"/>
-            <p>CONSULTAS GENERALES<br/>nahufed@gmail.com</p>
+              <FontAwesomeIcon icon={faClipboard} className="fs-1 me-3" />
+              <p>
+                CONSULTAS GENERALES
+                <br />
+                nahufed@gmail.com
+              </p>
             </div>
           </div>
-          <form action="" className="formulario-contacto">
-              <input type="text" placeholder="*TU NOMBRE"/>
-              <input type="text" placeholder="*TU EMAIL"/>
-              <select name="interes" placeholder="*">
-                <option value = ''>EN QUE ESTAS INTERESADO</option>
-                <option value = 'Desarrollo'>Desarrollo Web Personalizado</option>
-                <option value = 'Colaboracion'>Colaboración en Proyectos</option>
-                <option value = 'Reclutamiento'>Reclutamiento o Contratación</option>
-                <option value = 'Consultoria'>Consultoría o Asesoramiento Técnico</option>                
-                </select>
-                <textarea name="mensaje" placeholder="*TU MENSAJE" rows='5' cols = '40'/>
-                <button type="submit" className="btn btn-dark w-25 rounded-0 p-3">ENVIAR</button>
+          <form ref={form} onSubmit={sendEmail} className="formulario-contacto">
+            <input
+              type="text"
+              name="user_name"
+              placeholder="*TU NOMBRE"              
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="*TU EMAIL"
+                            
+              required
+            />
+            <select
+              name="subject"  
+              required
+            >
+              <option value="">EN QUE ESTAS INTERESADO</option>
+              <option value="Desarrollo Web Personalizado">Desarrollo Web Personalizado</option>
+              <option value="Colaboracion en Proyectos">Colaboración en Proyectos</option>
+              <option value="Reclutamiento o Contratación">
+                Reclutamiento o Contratación
+              </option>
+              <option value="Consultoría o Asesoramiento Técnico">
+                Consultoría o Asesoramiento Técnico
+              </option>
+            </select>
+            <textarea
+              name="message"
+              placeholder="*TU MENSAJE"
+              rows="5"              
+              
+              required
+            />
+            <button type="submit" value="Send" className="btn btn-dark w-25 rounded-0 p-3">
+              ENVIAR
+            </button>
           </form>
-      </div>
+        </div>
       </div>
     </main>
   );
